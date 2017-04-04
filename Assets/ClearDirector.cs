@@ -15,8 +15,10 @@ public class ClearDirector : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return)) {
+		if (Input.GetMouseButtonDown (0) ||
+		    Input.GetKeyDown (KeyCode.Return)) {
+			Debug.Log ("Down");
 			SceneManager.LoadScene ("GameScene");
-		}
+		}  
 	}
 }
